@@ -60,17 +60,6 @@ func GetSpecRawResTypeData(rs1 *winres.ResourceSet, typeID int) []byte {
 func RequestNewFileInfoForm(fvi FVInfo) FVInfo {
 
 	form := huh.NewForm(
-		// huh.NewGroup(huh.NewNote().
-		// 	Title("File Version Info").
-		// 	Description("Customize the File Version Info.\n\n").
-		// 	Next(true).
-		// 	NextLabel("Next"),
-		// ),
-
-		// huh.NewGroup(huh.NewNote().
-		// 	Title("File Info").
-		// 	Description("Input New File Info.\n\n"),
-		// ),
 
 		huh.NewGroup(
 			huh.NewInput().
