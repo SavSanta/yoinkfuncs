@@ -206,7 +206,7 @@ func SearchForCommonICOGroups(res *winres.ResourceSet) *winres.Icon {
 		}
 	}
 
-	panic("Failed to find matchable number or name. Consider manual specification.")
+	panic("Failed to find matchable number or name. Suggest using manual tool.")
 }
 
 func PerformResPatch(rs2 winres.ResourceSet, inTarget string) {
