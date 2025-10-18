@@ -126,7 +126,7 @@ func RequestNewFileInfoForm(fvi FVInfo) FVInfo {
 
 	).WithLayout(huh.LayoutStack)
 	err := form.Run()
-	if err != nil && errors.Is(err, huh.ErrUserAborted) {
+	if errors.Is(err, huh.ErrUserAborted) {
 	    fmt.Println("Cancelled...")
 	    os.Exit(1)
 	}
